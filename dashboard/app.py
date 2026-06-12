@@ -3,6 +3,7 @@ import pandas as pd
 import psycopg2
 import plotly.express as px
 import joblib
+import os
 
 
 # ==================================
@@ -514,5 +515,5 @@ st.download_button(
 st.markdown("---")
 
 st.markdown(
-    "Built with ❤️ using Python, Random Forest, PostgreSQL, Streamlit and Plotly"
+    "Built by Parth using Python, Random Forest, PostgreSQL, Streamlit and Plotly"
 )
