@@ -34,12 +34,10 @@ encoders = joblib.load(
 # DATABASE CONNECTION
 # ==================================
 
+import os
+
 conn = psycopg2.connect(
-    host="localhost",
-    database="fraud_detection",
-    user="postgres",
-    password="partha@123",
-    port="5433"
+    os.environ["DATABASE_URL"]
 )
 
 # ==================================
